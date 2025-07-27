@@ -62,6 +62,12 @@ function playGame(){
         return "computer";
         } 
     }
+    if (confirm("Do you want to play again?")){
+        playGame();
+    }
+    else{
+        console.log("Thank you for playing ^_^");
+    }
 }
 
 playGame();
